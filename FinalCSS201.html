@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final201CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <style>
+        
+        body {background-image: linear-gradient(to bottom, rgba(6, 6, 100, 0.3) 12%, rgba(22, 98, 174, 0.3) 52%, rgba(86, 73, 125, 0.2) 100%, rgba(116, 103, 121, 0.2) 90%), url("https://images.ctfassets.net/cfexf643femz/6GVjMgemv42lpFbXFEMN6F/628157e1f08efeab4317e96d91d779cb/Fotos_La_haus__19___1_.jpg");
+        height: 920px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        
+ font-family: "Shippori Mincho", serif;}
+
+
+.navbar {
+     height: 100px; border: 2px;
+     /* background-image: linear-gradient(225deg, rgba(24,24,28,0.3) 12%, rgba(93,191,180,0.3) 52%, rgba(41,42,50,0.3) 100%, rgba(17,19,19,0.3) 100%); */
+     display: flex; 
+     position: sticky;
+     margin-left: 0;
+    
+}
+
+.mlogo {
+margin-left: 1px;
+    height: 100px;   
+    padding: 1px;
+}
+
+a:hover {
+    color: rgb(20, 20, 21);
+    text-decoration: none;
+}
+a:visited { color: black;
+text-decoration: none;}
+a:link {text-decoration: none; color: rgb(22, 23, 24);}
+
+.itemlist {display:flex; 
+    font-size: 30px; font-family: "Shippori Mincho", serif;
+    white-space:nowrap;
+    list-style-type: none; }
+ .item1 {margin-right: 10%; margin-left: 50%;
+    } 
+
+.titleh1 {
+    display: flex; 
+    font-size: xx-large; align-items: center;
+    justify-content: center;
+    color: rgb(250, 244, 244); -webkit-text-stroke: 2px;
+    text-align: center;
+    
+ }
+ 
+
+ .text1 {
+  font-size: 40px; color:white; margin-bottom: 3%; margin-top: 5%;
+    padding-left: 4%;
+    text-align: center; 
+ }
+ .button {
+
+  border-radius: 4px;
+  display: block;
+  border: 2px solid black; 
+  font-size: xx-large;
+  margin: auto;
+  width: fit-content;
+ }
+ .footerinfo {
+    color: azure; font-size: 25px;
+  display: block;
+  margin: auto;
+text-align: center;}
+
+    
+
+    * {box-sizing: border-box;}
+.maingrid { display: grid; 
+    grid-template-columns: auto auto auto; margin-top: 100px;
+    column-gap: 1px;    
+    margin: 50px auto;
+    width: 70%;}
+    
+.maingrid > div { display: grid;
+    background-color: rgba(255, 255, 255, 0.07);
+    max-width: 100%;}
+    .div1 { 
+        grid-row-start:1 ; grid-row-end: 5;
+        width: 340px;
+        height: auto;
+        padding: 0%;
+        
+    }
+.div1 img { 
+    
+    width: 100%;    
+    height: auto; 
+    border-radius: 20px;
+
+}
+    
+
+.div2 {
+    grid-column-start: 2; grid-column-end: 4;
+    background-color: rgb(159, 159, 189, 0.3);
+    font-size: 50px;  
+    color: #eee9e9;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;  
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #4ea83e, 0 0 30px #1bb623, 0 0 40px rgb(150, 191, 37), 0 0 50px rgb(19, 146, 188);}
+  
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #2763c3, 0 0 40px #1891a3, 0 0 50px rgb(120, 17, 194);}
+  }
+
+        .div3 {
+            grid-column-start: 2; grid-column-end: 4;
+            grid-row-start:2; grid-row-end:4;  
+            font-size: 25px;  
+            text-align: center;
+        }
+        .styled-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+        }
+        .styled-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+ 
+
+}
+
+.styled-list li:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+
+
+}
+.styled-list li:visited {
+  transform: scale(1.05);
+  text-decoration: underline;
+ 
+}
+  .styled-list li:link {
+  transform: scale(1.05);
+
+}
+
+.div4 { grid-column-start: 2; grid-column-end: 4;
+            justify-content: center;
+            align-items: center;
+            }
+  
+.whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+    .h2title {
+            position: relative;
+            text-align: center;
+            font-size: 24px;
+            margin: 40px 0;
+        }
+
+        .h2title::before,
+        .h2title::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20%;
+            height: 1px;
+            background-color: black;
+        }
+
+        .h2title::before {
+            left: 0;
+            margin-right: 10px;
+        }
+
+        .h2title::after {
+            right: 0;
+            margin-left: 10px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+
+
+
+
+.container2 {
+  width: 60%;
+  margin: 2rem auto; 
+  position: relative;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+
+}
+
+.gallery__item--3 {
+  width: 100%;
+  height: auto;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.gallery__item--3 .barriobutton
+{
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  border: 2px solid black; 
+  font-size: xx-large;
+  margin: auto;
+  width: fit-content;
+  background-color: transparent;
+  
+}
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.gallery__item--6 .barriobutton2 {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  border: 2px solid black; 
+  font-size: xx-large;
+  margin: auto;
+  width: fit-content;
+  background-color: transparent;
+}
+.footercont {
+    background: linear-gradient(225deg, rgba(48,48,69,1) 4%, rgba(93,181,191,1) 52%, rgba(21,12,61,1) 96%);
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    
+    
+}
+
+.footerlist1 {
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    width: max-content;
+    
+}
+.emailform {
+  display: flex;
+  border-radius: 5px;
+height: 30px;
+}
+.footerlist1 > .emailform {
+  list-style-type: none;
+  flex-wrap: wrap;
+
+
+}
+.footerlist1 button{
+  background-color: #7a8cb0;
+  width: 60px;
+}
+.emailform input {
+  background-color: #3d433d;
+}
+.emailform ::placeholder {
+  color: rgba(233, 234, 240, 0.8)
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="mlogo" src="Images/Discovering-Medellin-Logo (1).png" alt=""> 
+
+<ul class="itemlist">
+    <li class="item1"> <a href="index.html">Tours</a>
+
+    </li>
+<li class="item1">
+   <a href="index.html">About us</a> 
+</li>
+        <li class="item1"> <a href="index.html">Contact us</a></li>
+        </ul>
+
+    </nav>
+
+    <h1 class="titleh1"> Welcome to Medellin:         
+        <br>the city of the eternal spring</h1>
+
+    <p class="text1">Let us show you around, the risk is you will fall in love with the city of flowers, music and fashion</p>
+    <a href="index.html" class="button" target="_blank">Book here</a>
+
+
+    <div class="maingrid">
+        <div class="div div1">
+            <img src="Images/Parap07.jpg" alt="paraglading">
+        </div>
+        <div class="div div2">Private tours Medellin</div>  
+        <div class="div div3">
+            <ul class="styled-list">
+            <li> <a href="final_html2.html">Comuna 13</a></li>
+            <li> <a href="final_html2.html">Guatape</a></li>
+            <li> <a href="final_html2.html">City tour</a></li>
+            <li> <a href="final_html2.html">Paragliding</a></li>
+            </ul>
+        </div>
+
+        <div class="div div4">
+            <a href="https://wa.me/<+573167494898?>Hi%20there>" class="whatsapp-button" target="_blank">Contact us on Whatsapp</a>
+        </div>
+      </div>
+    
+<h2 class="h2title">Some of the tours we offer</h2>
+
+
+
+    <div class="container2">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="Images/nightph.jpg" alt="Gallery image 1" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="Images/abbd62a5-aa27-45e3-abd3-de31d8de39e9.jpg" alt="Gallery image 2" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="Images/3bd85b8a-e18b-4329-8658-76bbab5abcba.jpg" alt="Gallery image 3" class="gallery__img">
+                <button class="barriobutton">Outdoor activites</button>
+            
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="Images/Guatapp.jpg" alt="Gallery image 4" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="Images/1706142747652.jpg" alt="Gallery image 5" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="Images/21482c74-e09c-47a2-9619-e4737097c0bd.jpg" alt="Gallery image 6" class="gallery__img">
+                <button class="barriobutton2">Quote</button>
+            </figure>
+        </div>
+    </div>
+
+    <footer class="footercont"> 
+<ul class="footerlist1"> 
+  <li>Abous us</li>
+  <li>More tours</li>
+  <li>Recommendations in the city</li>
+  <li>Contact us</li>
+</ul>
+
+<ul class="footerlist1"> 
+  <li>Email: <a href="mailto:example@example.com">Dalerojo@example.com</a></li>
+  <li>Phone: <a href="tel:+1234567890">+1 12345678</a></li>
+
+</ul>
+        
+<ul class="footerlist1">
+  <li>
+    <form action="/action_page.php" class="emailform">
+  <input type="email" id="email" name="email" placeholder="Email to quote">
+  <button type="submit">Get Info</button>
+</form>
+  </li>
+</ul>
+    <p class="footerinfo">&copy; Making my way to success</p>
+
+    </footer>
+
+
+
+</body>
+</html>
